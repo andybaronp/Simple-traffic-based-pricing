@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive Pricing</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>Simple, traffic-based pricing</h1>
+            <p> Sign-up for our 30-day trial. No credit card required. </p>
+        </div>
+        <div class="prining-container">
+
+            <div class="pricing">
+                <div class="pagViewa"> <span id="range-value"> 100k</span> PAGEVIEWS</div>
+                <div class="slidecontainer">
+                    <input type="range" name="range" id="range" class="styled-slider slider-progress range" min="0"
+                        max="4">
+
+                </div>
+                <div class="total">
+
+                    <span id="price">$16.00</span>
+                    <span>/ month</span>
+
+                </div>
+            </div>
+            <div class="discount">
+                <span>Monthly Billing</span>
+                <input type="checkbox" name="discount" id="discount">
+                <p>Yearly Billing</p> <span>-25%</span>
+            </div>
+            <div class="trial">
+                <ul>
+                    <li>Unlimited websites</li>
+                    <li>100% data ownership</li>
+                    <li>Email reports</li>
+                </ul>
+                <div> <span>Start my trial</span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

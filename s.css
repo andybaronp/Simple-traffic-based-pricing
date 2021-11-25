@@ -1,0 +1,26 @@
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 300px;
+  border-radius: 10px; /*Esta configuración de propiedad hace que los gráficos al llenar la barra de progreso se redondeen */
+  color: yellow;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 15px;
+  border-radius: 10px; /* Establecer la pista en esquinas redondeadas */
+  box-shadow: 0 1px 1px #def3f8, inset 0 0.125em 0.125em #0d1112; /* Seguimiento del efecto de sombra incorporado */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 25px;
+  width: 25px;
+  margin-top: -5px; /* Iguala el desplazamiento del control deslizante más allá de la pista */
+  background: #5bf303;
+  border-radius: 50%; /* La apariencia se establece en redonda */
+  border: solid 0.125em rgba(205, 224, 230, 0.5); /* Establecer borde */
+  box-shadow: 0 0.125em 0.125em #3b4547; /* Agregar sombra inferior */
+}
